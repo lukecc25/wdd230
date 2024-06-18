@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --background-color: rgb(183, 206, 207); 
+    --header-color: rgb(51, 51, 132);
+    --accent-color: cadetblue;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+}
+#content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+header{
+    background-color: var(--header-color);
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+header hr{
+    border-color: white;
+    border-top: 5px;
+    width: 60%;
+}
+
+#menu-button{
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
+    color: var(--background-color);
+}
+
+#menu-button::before{
+    content: "≡";
+}
+
+#menu-button.open::before{
+    content: "X";
+}
+
+nav ul{
+    background-color: var(--accent-color);
+    padding-inline-start: 0px;
+    display: none;
+}
+
+nav ul li:hover{
+    background-color: var(--background-color);
+    
+}
+
+nav ul li{
+    text-align: center;
+    margin: 20px;
+    border-radius: 30%;
+    padding: 15px;
+}
+
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    color: rgb(0,0,0);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main h2{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--header-color);
+}
+
+footer p{
+    color: white;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px
+}
+
+hr{
+    border-color: darkblue;
+    border-top: 5px;
+}
+
+.card{
+    place-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.card{
+    place-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.card ul{
+    text-align: left;
+}
+
+img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+.card h3{
+    background-color: var(--header-color);
+    text-align: center;
+    color: white;
+}
+
+.card h4{
+    background-color: var(--header-color);
+    text-align: center;
+    color: white;
+}
+
+.card p{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    background-color: var(--header-color);
+    padding: 10px;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Luke Campbell - course assignment portal">
+    <meta name="author" content="Luke Campbell">
+    <meta name="og:title" content="WDD230 Form Page for Luke Campbell">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://lukecc25.github.io/wdd230/images/me-byui.jpeg">
+    <meta name="og:url" content="https://lukecc25.github.io/wdd230/form.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <title>Luke Campbell - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img src="images/me-byui.webp" alt="Picture of Luke Campbell">
+            <h1>Luke C. Campbell</h1>
+            <button id="menu-button"></button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+            </ul>
+
+        </nav>
+        <main>
+            <form action="record.html" method="get">
+                <label>Username: <sup class="red">*</sup>
+                    <input type="text" name="username" id="username" required>
+                </label>
+                <label>Password: <sup class="red">*</sup> (at least 8 alphanumeric chars)
+                    <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}">
+                </label>
+                <label>Confirm: <sup class="red">*</sup> <span id="message"></span>
+                    <input type="password" name="confirm" id="confirm" required>
+                </label>
+                <label>Email: <sup class="red">*</sup> 
+                    <input type="email" name="email" id="email" required pattern=".+@byui\.edu">
+                </label>
+                <label>Rating: <sup class="red">*</sup> <div id="rangevalue">0</div>
+                    <input type="range" id="range" min="1" max="10" step="1" dataset="myrange"
+                    list="myrange">
+                    <dataset id="myrange">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </dataset>
+                </label>
+                <button type="submit">Rate My Page!</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span> - Luke Campbell - Idaho, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>

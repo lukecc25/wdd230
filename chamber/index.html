@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Luke Campbell - Chamber home page">
+    <meta name="author" content="Luke Campbell">
+    <meta name="og:title" content="Caldian Chamber of Comerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://lukecc25.github.io/wdd230/chamber/images/norway.jpg">
+    <meta name="og:url" content="https://lukecc25.github.io/wdd230/chamber/index.html">
+    <title>Caldian Chamber of Commerce</title>
+    <link rel="icon" href="images/dragfavicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="dark-mode"></button>
+        <h1>Caldian Chamber of Commerce</h1>
+    </header>
+   
+    <button id="menu-button"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>                
+                <source media="(max-width: 600px)" srcset="images/hero_img_small.webp" />
+                <source media="(max-width: 900px)" srcset="images/hero_img_medium.webp" />
+                <img src="images/hero_img_large.webp" alt="Hero image" />
+            </picture>    
+            <button onclick="window.location.href='joinchamber.html'">Join The Chamber</button>
+        </div>
+        <div class="content">
+            <section class="events">
+                <h2>Events</h2>
+                <hr>
+                <h3>Nexus Academy Grand Opening</h3>
+                <p>The Nexus Academy of Arcane Arts grand opening starts at 9am on 4/09.</p>
+                <h3>Lunar Feast</h3>
+                <p>Our yearly Lunar Feast where we celebrate our heritage will be starting on 5/20 at 11pm for the whole week.</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <hr>
+                <div class="weatherInfo">
+                    <h2>Weather</h2>
+                    <div>
+                        <p>Temperature <span id="temperature">30</span>&deg;F</p>
+                        <p>Wind Speed <span id="windspeed">5</span></p>
+                        <p>Weather <span id="weather">cloudy</span></p>
+                        <p>Wind Chill <span id="windchill"></span></p>
+
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <h2>Location</h2>
+                <hr>
+                <p>Located inside the borders of Eikelandsosen Nordway</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.248945670957!2d5.730236532594849!3d60.240200543486765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463c453c47a86d53%3A0xbba38184885cb9fb!2s5640%20Eikelandsosen%2C%20Norway!5e0!3m2!1sen!2sus!4v1715637325033!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <div class="spotlights">
+                <section class="spotlight1">
+                    <h3>Spotlight 1</h3>
+                    <hr>
+                    <p>Wizard Mail achieved there Millionth delievery!!!
+                        Way to Go!!
+                    </p>
+                </section>
+                <section class="spotlight2">
+                    <h3>Spotlight 2</h3>
+                    <hr>
+                        <p>Kisper Thimblebottom has been announced to be the headmaster of Nexus Acadamy
+                            Congratulation!!!
+                        </p>
+                </section>
+                <section class="spotlight3">
+                    <h3>Spotlight 3</h3>
+                    <hr>
+                    <p>Chamber Elder Wimpleton has been reelected for there second term in office!
+                        The Future is bright ;>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/dragfavicon.ico" alt="logo image">
+        <p>Caldian Chamber | Luke Campbell | WDD230 Project</p>
+        <p>282 Calder Street</p>
+        <p>Caldian, ID 58322</p>
+        <p>caldiancommerce@gov.com</p>
+        <hr>
+        <p>&copy;<span id="currentYear"></span> Luke Campbell</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

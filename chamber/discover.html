@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Luke Campbell - Chamber Discover Page">
+    <meta name="author" content="Luke Campbell">
+    <meta name="og:title" content="Caldian Chamber of Comerce Site - Discover">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://lukecc25.github.io/wdd230/chamber/images/norway.jpg">
+    <meta name="og:url" content="https://lukecc25.github.io/wdd230/chamber/discover.html">
+    <title>Caldian Chamber of Commerce</title>
+    <link rel="icon" href="images/dragfavicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="dark-mode"></button>
+        <h1>Caldian Chamber of Commerce</h1>
+    </header>
+   
+    <button id="menu-button"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="discover">
+        <div id="discover-sidebar">
+            <section id="discover-message">
+                <h3></h3>
+            </section>
+            <section id="discover-demographics">
+                <h2>Demographics</h2>
+                <p>Households: 10000</p>
+                <p>Median Age: 48</p>
+                <p>Median Income: $95000</p>
+                <p>Population (2024): 20000</p>                
+            </section>
+            <section id="discover-events">
+                <h2>Local Events</h2>
+                <p>Nexus Academy Of Arcane Arts Grand Opening, Lunar Feast, Anual Fox Hunt.</p>
+            </section>
+        </div>
+        <div class="discover-images">
+            <figure>
+                <img src="images/fox-1758183_1280.webp" alt="" loading="lazy" height="400">
+                <figcaption>Picture of Snow Fox</figcaption>
+            </figure>
+            <p>The Snow fox is a common animal found around Caldian and is often the first chosen familiar of a wizard.</p>
+            <figure>
+                <img src="images/house-4028391_1280.webp" alt="" loading="lazy" height="399">
+                <figcaption>Norway Outskirts House </figcaption>
+            </figure>
+            <p>This small thatch roofed house is often the home of residents who cannot live in the big city either willingly or unable to.</p>
+            <figure>
+                <img src="images/magic-5483124_1280.webp" alt="" loading="lazy" height="398">
+                <figcaption>Magic Book</figcaption>
+            </figure>
+            <p>This magic book is often a necessity for any new wizards who have yet learned magic and will soon
+                be given out to new students once the newly formed magic school is opened.
+            </p>
+            <figure>
+                <img src="images/mountain-6231396_1280.webp" alt="" loading="lazy" height="397">
+                <figcaption>Norway Mountains</figcaption>
+            </figure>
+            <p>These are the mountains that are spread throughout Norway and are the homes of magical creatures both good and bad.</p>
+            <figure>
+                <img src="images/nature-1032523_1280.webp" alt="" loading="lazy" height="396">
+                <figcaption>Aurora Borealis</figcaption>
+            </figure>
+            <p>The Aurora Borealis is often seen over the ocean near Caldian twice a year. If there is ever a third sighting it is said to be
+                a sign of good fortunes to come or an omen of terrible times ahead. This however is just rumors as there is no evidence to prove these 
+                things. 
+            </p>
+            <figure>
+                <img src="images/norway_houses.webp" alt="" loading="lazy" height="395">
+                <figcaption>Norway City Houses</figcaption>
+            </figure>
+            <p>This is a picture of some houses seen in the cities as they are built sturdier and often rented out with only the rich 
+                and those with higher authority having houses and often mansions of their own.
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <img src="images/dragfavicon.ico" alt="logo image">
+        <p>Caldian Chamber | Luke Campbell | WDD230 Project</p>
+        <p>282 Calder Street</p>
+        <p>Caldian, ID 58322</p>
+        <p>caldiancommerce@gov.com</p>
+        <hr>
+        <p>&copy;<span id="currentYear"></span> Luke Campbell</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

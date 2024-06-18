@@ -1,0 +1,81 @@
+@media screen and (min-width:600px){
+
+    nav{
+        margin-bottom: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.open{
+        flex-direction: row;
+    }
+
+    #menu-button{
+        display: none;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .content, .map{
+        grid-column: 1/3;
+    }
+
+    .content, .spotlights{
+        grid-column: 1/3;
+    }
+
+    .spotlights{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 10px;
+    }
+
+    .spotlight1,
+    .spotlight2,
+    .spotlight3 {
+        flex: 1;
+        background-color: var(--accent-color);
+        border: 5px solid var(--header-color);
+        border-radius: 10px;
+        margin-bottom: auto;
+    }
+
+    /* Discover Page Styles */
+
+    #discover-main {
+        display : grid;
+        grid-template-columns: 1fr 2fr;
+        color: var(--header-color);
+        }
+    
+     .discover-images{
+        grid-column: 2;
+        text-align: center;
+     }
+    
+    .discover-images img{
+        border: 5px solid var(--header-color)
+    }
+    
+    .discover-images img:hover{
+        opacity: 0.5;
+     }
+    
+    
+    #discover-demographics, #discover-message, #discover-events {
+        display: block;
+        grid-column: 1;
+        border : black solid 1px;
+        padding : 1rem;
+        margin : 1rem 0;
+    }
+}

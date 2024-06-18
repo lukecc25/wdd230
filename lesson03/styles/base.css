@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root{
+    --background-color: #D1F5BE ; 
+    --header-color: #231651 ;
+    --accent-color: #68C5DB ;
+}
+
+body{
+    font-family: "Playfair Display", serif;
+    background-color: var(--background-color);
+}
+#content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("../images/norway.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+    border: inset;
+    border-radius: 10px;
+    height: 180px;
+    background-color: var(--header-color);
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    background-color: var(--header-color); 
+    margin: auto;
+    padding: 5px;
+    margin-top: 100px;
+    border-radius: 20px;
+    width: 50%;
+    font-size: large;
+}
+
+
+
+#menu-button{
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
+    color: var(--background-color);
+    background-color: var(--background-color);
+    border-style: none;
+    border-radius: 100px;
+    width: 15%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#menu-button::before{
+    content: "≡";
+    color: var(--header-color);
+}
+
+#menu-button.open::before{
+    content: "X";
+    color: var(--header-color);
+}
+
+nav ul{
+    background-color: var(--accent-color);
+    padding-inline-start: 0px;
+    display: none;
+    border-style: solid;
+    border-color: var(--header-color);
+    border-width: 5px;
+    border-radius: 5%;
+}
+
+nav ul li:hover{
+    background-color: var(--background-color);
+    
+}
+
+nav ul li{
+    text-align: center;
+    margin: 20px;
+    border-radius: 30%;
+    padding: 15px;
+}
+
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main h2{
+    text-align: center;
+}
+
+hr{
+    border-color: var(--header-color);
+    margin: 5px;
+}
+
+.card{
+    display: block;
+    border-style: solid;
+    border-color: var(--header-color);
+    color: var(--header-color);
+    border-width: 5px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--header-color);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+.colors th {
+    background-color: var(--header-color);
+    color: var(--background-color);
+ }
+
+ .colors td{
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--header-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    background-color: var(--background-color);
+    color: var(--header-color);
+}
+
+.accent1 {
+    background-color: var(--accent-color);
+    color: var(--header-color);
+}
+
+.accent2{
+    background-color: white;
+    color: var(--header-color);
+}
+
+.typography{
+    color: var(--header-color);
+    text-align: center;
+}
+
+.typography h3{
+    background-color: var(--accent-color);
+}
+
+.name h3{
+    text-align: center;
+}
+.name{
+    color: var(--header-color);
+}

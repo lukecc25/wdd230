@@ -1,0 +1,42 @@
+@media screen and (min-width:700px){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.open{
+        flex-direction: row;
+    }
+
+    #cards{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 5px
+    }
+    .card h3{
+        padding: 5px;
+    }
+
+    #menu-button{
+        display: none;
+    }
+    #map{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: solid;
+        border-color: white;
+        border-width: 5px;
+        padding: 10px;
+        margin: 5px;
+        align-self: center;
+        width: 95%;
+        text-align: center;
+    }
+    
+    #map iframe {
+        width: 100%;
+        border: none; 
+        text-align: center;
+    }
+}
