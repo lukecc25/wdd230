@@ -252,7 +252,7 @@ footer{
  .discover-images{
     display: block;
     text-align: center;
-    color: var(--header-color);
+    color: var(--font-color);
  }
 
 .discover-images img{
@@ -281,8 +281,12 @@ input[type=text], input[type=range], input[type=radio] {
 	padding: 0.5em;
 }
 
-main #join{
+
+label {
     display: block;
+    color: var(--font-color);
+    padding: auto;
+    margin-left: 3rem;
 }
 
 #range {
