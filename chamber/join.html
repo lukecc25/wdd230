@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 - Web Frontend Development - Luke Campbell - Chamber Join page">
+    <meta name="author" content="Luke Campbell">
+    <meta name="og:title" content="Join Page">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://lukecc25.github.io/wdd230/chamber/join.html">
+    <title>Caldian Chamber of Commerce</title>
+    <link rel="icon" href="images/dragfavicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="dark-mode"></button>
+        <h1>Caldian Chamber of Commerce</h1>
+    </header>
+   
+    <button id="menu-button"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join">
+        <form action="thankyou.html" method="get">
+            <label>First Name: <sup class="red">*</sup>
+                <input type="text" name="firstname" id="firstname" required>
+            </label>
+            <label>Last Name: <sup class="red">*</sup>
+                <input type="text" name="lastname" id="lastname" required>
+            </label>
+            <label>Title/Position: <sup class="red">*</sup>  (Within Organization)
+                <input type="text" name="position" id="position" required pattern="[A-Za-z0-9\s\-] {7,}">>
+            </label>
+            <label>Email: <sup class="red">*</sup>(example@gmail.com)
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label>Phone#: <sup class="red">*</sup>
+                <input type="telephone" name="phone" id="phone" required>
+            </label>
+            <label>Business/Organization's Name: <sup class="red">*</sup>
+                <input type="text" name="organization" id="organization" required>
+            </label>
+            <label>Membership Level: <sup class="red">*</sup> <div id="rangevalue"></div>
+                <input type="range" id="range" min="1" max="4" step="1" dataset="myrange"
+                list="myrange">
+                <dataset id="myrange">
+                    <option value="1">NP</option>
+                    <option value="2">Bronze</option>
+                    <option value="3">Silver</option>
+                    <option value="4">Gold</option>
+                </dataset>
+            </label>
+            <label>Business/Organization Description: <sup class="red">*</sup>
+                <input area="text" name="description" id="description">
+            </label>
+            <input type="hidden">
+            <button type="submit">Information Seekers Welcome!</button>
+        </form>
+    </main>
+    <footer>
+        <img src="images/dragfavicon.ico" alt="logo image">
+        <p>Caldian Chamber | Luke Campbell | WDD230 Project</p>
+        <p>282 Calder Street</p>
+        <p>Caldian, ID 58322</p>
+        <p>caldiancommerce@gov.com</p>
+        <hr>
+        <p>&copy;<span id="currentYear"></span> Luke Campbell</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

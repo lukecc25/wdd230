@@ -273,3 +273,35 @@ footer{
     color: var(--font-color);
     background-color: var(--accent-color);
 }
+
+/* Join Page */
+
+input[type=text], input[type=range], input[type=radio] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+main #join{
+    display: block;
+}
+
+#range {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#myrange {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+    padding-bottom: 0.5em;
+}
+
+#myrange option {
+	flex: 1 1 auto;
+}
