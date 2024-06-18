@@ -1,0 +1,14 @@
+{
+    "familyName" : "Campbell",
+    "moveInDate" : "2024-06-01",
+    "numberOfRecords" : 7,
+    "visited" : true,
+    "familyData" : [
+        {"name" : "Luke",
+        "gender" : "M",
+        "birthdate" : "2001-01-25"},
+        {"name" : "Sabrina",
+        "gender" : "F",
+        "birthdate" : "1999-12-14"}
+    ]
+}
