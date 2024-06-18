@@ -40,8 +40,8 @@
             <label>Last Name: <sup class="red">*</sup>
                 <input type="text" name="lastname" id="lastname" required>
             </label>
-            <label>Title/Position: <sup class="red">*</sup>  (Within Organization)
-                <input type="text" name="position" id="position" required pattern="[A-Za-z0-9\s\-] {7,}">>
+            <label>Title/Position: <sup class="red">*</sup>  (Within Organization, at least 7 alphanumeric chars)
+                <input type="text" name="position" id="position" required pattern="[A-Za-z0-9\s\-]{7,}">>
             </label>
             <label>Email: <sup class="red">*</sup>(example@gmail.com)
                 <input type="email" name="email" id="email" required>
