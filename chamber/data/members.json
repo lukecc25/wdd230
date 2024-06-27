@@ -1,0 +1,67 @@
+{
+    "members" : [
+        {
+            "name" : "Higgly Hufflebottum",
+            "address1" : " Stasjonsvegen 9, 5743 Caldian, Norway",
+            "address2" : "Parkveien 12, 3430 Caldian, Norway",
+            "phone" : "+47 55-56-22-34",
+            "websiteURL" : "https://steenogstromoslo.no/",
+            "imageURL": "./images/steen&strom.webp",
+            "membership":""
+        },
+        {
+            "name" : "James Shoemaker",
+            "address1" : "Fjordveien 23, 3421 Caldian, Norway",
+            "address2" : "Havnveien 19, 3427 Caldian, Norway",
+            "phone" : "+47 57 18 33 11",
+            "websiteURL" : "https://mallofnorway.com/",
+            "imageURL": "./images/mall_of_norway.webp",
+            "membership":""
+        },
+        {
+            "name" : "Phil limpstrum",
+            "address1" : "Skogbakken 7, 3422 Caldian, Norway",
+            "address2" : "",
+            "phone" : "",
+            "websiteURL" : "https://www.bunnpris.no/",
+            "imageURL": "./images/bunnpris.webp",
+            "membership":""
+        },
+        {
+            "name" : "Don Dandylion",
+            "address1" : "Kystveien 14, 3423 Caldian, Norway",
+            "address2" : "Torgplassen 3, 3428 Caldian, Norway",
+            "phone" : " +47 43 76 73 62",
+            "websiteURL" : "https://sumart.no/",
+            "imageURL": "./images/sumart.webp",
+            "membership":""
+        },
+        {
+            "name" : "Jill Pheonix",
+            "address1" : "Midtbyen 9, 3424 Caldian, Norway",
+            "address2" : "",
+            "phone" : "+47 66 94 62 10",
+            "websiteURL" : "https://www.billingstadtrelast.no/",
+            "imageURL": "./images/billingstad.webp",
+            "membership":""
+        },
+        {
+            "name" : "Bill Bippleten",
+            "address1" : "Fjellstien 5, 3425 Caldian, Norway",
+            "address2" : "Elvegata 6, 3429 Caldian, Norway",
+            "phone" : "+47 53 97 31 33",
+            "websiteURL" : "https://www.mulberry.com/",
+            "imageURL": "./images/mulberry.webp",
+            "membership":""
+        },
+        {
+            "name" : " Stuart Williams",
+            "address1" : "Sundgata 11, 3426 Caldian, Norway",
+            "address2" : "",
+            "phone" : "+47 44 61 15 72",
+            "websiteURL" : "https://hattebutikken.no/",
+            "imageURL": "./images/hattebutikken-holm-fasade-1024x659.webp",
+            "membership":""
+        }
+    ]
+}

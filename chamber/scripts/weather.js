@@ -43,3 +43,8 @@ const updateWeatherInfo = (data) => {
 };
 
 fetchWeather(); 
+
+
+
+
+

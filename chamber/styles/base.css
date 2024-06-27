@@ -309,3 +309,20 @@ label {
 #myrange option {
 	flex: 1 1 auto;
 }
+
+/*Meet and Greet*/
+.meet-greet{
+    background-color: var(--accent-color);
+    grid-column: 1/4;
+    text-align: center;
+    display: none;
+}
+
+.meet-greet.show{
+    display: block;
+}
+
+.meet-greet button{
+    background-color: var(--header-color);
+    color: var(--font2-color);
+}

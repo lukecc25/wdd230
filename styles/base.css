@@ -94,6 +94,22 @@ main h2{
     text-align: center;
 }
 
+.temple {
+    text-align: center;
+    position: relative;
+}
+
+.temple p{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: var(--background-color);
+    color: black;
+    padding: .5rem;
+    border: 2px var(--header-color) solid;
+    border-radius: 4px;
+}
+
 footer{
     text-align: center;
     background-color: var(--header-color);

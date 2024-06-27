@@ -1,4 +1,20 @@
+body{
+    text-align: center;
+    background-color: rgb(85, 85, 85);
+    color: aliceblue;
+}
+
 #cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#cards section{
+    color: black;
+    display: block;
+    border: 1px black solid;
+    border-radius: 100px 50px;
+    text-align: center;
+    padding: 2rem;
+    background-color: lightblue;
 }
