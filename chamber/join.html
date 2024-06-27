@@ -32,41 +32,74 @@
         </ul>
     </nav>
     <main id="join">
-        <form action="thankyou.html" method="get">
-            <label>First Name: <sup class="red">*</sup>
-                <input type="text" name="firstname" id="firstname" required>
-            </label>
-            <label>Last Name: <sup class="red">*</sup>
-                <input type="text" name="lastname" id="lastname" required>
-            </label>
-            <label>Title/Position: <sup class="red">*</sup>  (Within Organization, at least 7 alphanumeric chars)
-                <input type="text" name="position" id="position" required pattern="[A-Za-z0-9\s\-]{7,}">>
-            </label>
-            <label>Email: <sup class="red">*</sup>(example@gmail.com)
-                <input type="email" name="email" id="email" required>
-            </label>
-            <label>Phone#: <sup class="red">*</sup>
-                <input type="telephone" name="phone" id="phone" required>
-            </label>
-            <label>Business/Organization's Name: <sup class="red">*</sup>
-                <input type="text" name="organization" id="organization" required>
-            </label>
-            <label>Membership Level: <sup class="red">*</sup> <div id="rangevalue"></div>
-                <input type="range" id="range" min="1" max="4" step="1" dataset="myrange"
-                list="myrange">
-                <dataset id="myrange">
-                    <option value="1">NP</option>
-                    <option value="2">Bronze</option>
-                    <option value="3">Silver</option>
-                    <option value="4">Gold</option>
-                </dataset>
-            </label>
-            <label>Business/Organization Description: <sup class="red">*</sup>
-                <input area="text" name="description" id="description">
-            </label>
-            <input id="join-time" type="hidden" name="join-time" value="">
-            <button type="submit">Information Seekers Welcome!</button>
-        </form>
+        <div>
+            <form action="thankyou.html" method="get">
+                <label>First Name: <sup class="red">*</sup>
+                    <input type="text" name="firstname" id="firstname" required>
+                </label>
+                <label>Last Name: <sup class="red">*</sup>
+                    <input type="text" name="lastname" id="lastname" required>
+                </label>
+                <label>Title/Position: <sup class="red">*</sup>  (Within Organization, at least 7 alphanumeric chars)
+                    <input type="text" name="position" id="position" required pattern="[A-Za-z0-9\s\-]{7,}">
+                </label>
+                <label>Email: <sup class="red">*</sup>(example@gmail.com)
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label>Phone#: <sup class="red">*</sup>
+                    <input type="telephone" name="phone" id="phone" required>
+                </label>
+                <label>Business/Organization's Name: <sup class="red">*</sup>
+                    <input type="text" name="organization" id="organization" required>
+                </label>
+                <label>Membership Level: <sup class="red">*</sup> <div id="rangevalue"></div>
+                    <input type="range" id="range" min="1" max="4" step="1" dataset="myrange"
+                    list="myrange">
+                    <dataset id="myrange">
+                        <option value="1">NP</option>
+                        <option value="2">Bronze</option>
+                        <option value="3">Silver</option>
+                        <option value="4">Gold</option>
+                    </dataset>
+                </label>
+                <label>Business/Organization Description: <sup class="red">*</sup>
+                    <input area="text" name="description" id="description">
+                </label>
+                <input id="join-time" type="hidden" name="join-time" value="">
+                <button type="submit">Information Seekers Welcome!</button>
+            </form>
+        </div>
+        <div>
+            <h2>Membership Levels Benefits</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>For non profit organizations and there is no fee</li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <img src="images/dragfavicon.ico" alt="logo image">

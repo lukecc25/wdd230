@@ -276,6 +276,28 @@ footer{
 
 /* Join Page */
 
+#join{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--font-color);
+}
+
+#join > div {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px var(--header-color) solid;
+    border-radius: 10px;
+    width: 90%;
+    min-width: 400px;
+    background-color: var(--accent-color);
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    
+}
+
 input[type=text], input[type=range], input[type=radio] {
 	margin: 1rem;
 	padding: 0.5em;
