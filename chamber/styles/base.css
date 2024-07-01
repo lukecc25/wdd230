@@ -348,3 +348,43 @@ label {
     background-color: var(--header-color);
     color: var(--font2-color);
 }
+
+
+
+/*Directory*/
+
+#directory{
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#cards section{
+    color: var(--font-color);
+    display: block;
+    border: 2px var(--header-color) solid;
+    border-radius: 100px 50px;
+    text-align: center;
+    padding: 2rem;
+    margin: .5rem;
+    background-color: var(--accent-color);
+}
+
+#cards section p{
+  margin-bottom: 20px;
+}
+
+#cards ul{
+    list-style-type: none;
+}
+
+#cards section li a{
+    color: var(--header-color);
+    text-decoration: none;
+    text-align: center;
+}

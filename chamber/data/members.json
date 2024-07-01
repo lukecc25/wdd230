@@ -7,7 +7,7 @@
             "phone" : "+47 55-56-22-34",
             "websiteURL" : "https://steenogstromoslo.no/",
             "imageURL": "./images/steen&strom.webp",
-            "membership":""
+            "membership":"Gold"
         },
         {
             "name" : "James Shoemaker",
@@ -16,16 +16,16 @@
             "phone" : "+47 57 18 33 11",
             "websiteURL" : "https://mallofnorway.com/",
             "imageURL": "./images/mall_of_norway.webp",
-            "membership":""
+            "membership":"Gold"
         },
         {
             "name" : "Phil limpstrum",
             "address1" : "Skogbakken 7, 3422 Caldian, Norway",
             "address2" : "",
-            "phone" : "",
+            "phone" : "+47 42 58 17 72",
             "websiteURL" : "https://www.bunnpris.no/",
             "imageURL": "./images/bunnpris.webp",
-            "membership":""
+            "membership":"Bronze"
         },
         {
             "name" : "Don Dandylion",
@@ -34,7 +34,7 @@
             "phone" : " +47 43 76 73 62",
             "websiteURL" : "https://sumart.no/",
             "imageURL": "./images/sumart.webp",
-            "membership":""
+            "membership":"NP"
         },
         {
             "name" : "Jill Pheonix",
@@ -43,7 +43,7 @@
             "phone" : "+47 66 94 62 10",
             "websiteURL" : "https://www.billingstadtrelast.no/",
             "imageURL": "./images/billingstad.webp",
-            "membership":""
+            "membership":"Silver"
         },
         {
             "name" : "Bill Bippleten",
@@ -52,7 +52,7 @@
             "phone" : "+47 53 97 31 33",
             "websiteURL" : "https://www.mulberry.com/",
             "imageURL": "./images/mulberry.webp",
-            "membership":""
+            "membership":"Silver"
         },
         {
             "name" : " Stuart Williams",
@@ -61,7 +61,7 @@
             "phone" : "+47 44 61 15 72",
             "websiteURL" : "https://hattebutikken.no/",
             "imageURL": "./images/hattebutikken-holm-fasade-1024x659.webp",
-            "membership":""
+            "membership":"Gold"
         }
     ]
 }
