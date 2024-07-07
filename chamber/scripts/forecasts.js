@@ -1,43 +1,43 @@
-const WEATHER_URL= 'https://api.openweathermap.org/data/2.5/forecast?lat=60.249185&lon=5.748687&appid=4ebb1a1b87c7bdec14ea2f33276dce29&units=imperial';
+const LAT = 60.249185;
+const LON = 5.748687;
+const APIKEY = "4ebb1a1b87c7bdec14ea2f33276dce29";
+const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
 
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const ONE_DAY = 24 * 60 * 60 * 1000
 
-function displayResults(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    captionDesc.innerText = data.weather[0].main;
-    weatherIcon.setAttribute("src"," https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png");
-}
+function showCurrentTimeForecast(forecasts){
+  const weatherElt = document.querySelector("#forecast")
+  // Get the current time from the first element
+  const timenow = forecasts[0].dt_txt.slice(11, 19) 
 
+  // Build a new list of temp forecasts with the same time
+  let temps = forecasts.filter(x => x.dt_txt.indexOf(timenow) != -1)
 
-async function apiFetch() {
-    try {
-      const response = await fetch(WEATHER_URL);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data); // testing only
-        displayResults(data); // uncomment when ready
-      } else {
-          throw Error(await response.text());
-      }
-    } catch (error) {
-        console.log(error);
-    }
+  // Output the next three days temperatures
+  for (let i=1; i <= 3; i++){
+    let newsection = document.createElement("section");    
+    let mydate = temps[i].dt_txt.slice(5, 10)
+    let icon = temps[i].weather[0].icon
+    newsection.innerHTML = `<p>${mydate}</p>
+    <p><img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather"></p>
+    <p>${temps[i].main.temp.toFixed(0)}&deg;F</p>`
+    weatherElt.append(newsection)
   }
   
-  apiFetch();
-
-
-
-  function showCurrentTimeForecast(forecast){
-    const weatherElt = document.querySelector("body section")
-    const timenow = forecasts[0].dt_txt.slice(11,19)
-    let temps = forecasts.filter(x => x.dt_txt.indexOf(timenow) != -1)
-    for(let i=1, i<= 3; i++){
-        let newsection= document.createElement("section");
-        let mydate = temps[i].dt_txt.slice(0, 10)
-        newsection.innerHTML = `<h2>${mydate}</h2><p>${temps[i].main.temp}&deg;F @ ${timenow}`
-        weatherElt.append = timenow
-    }
 }
+
+async function fetchForecast() {
+    try {
+      const response = await fetch(weatherURL);
+      if (response.ok) {
+        const data = await response.json();        
+        showCurrentTimeForecast(data.list);
+      } else {
+        throw Error(await response.text());
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+fetchForecast()
