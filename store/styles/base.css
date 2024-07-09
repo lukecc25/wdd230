@@ -1,0 +1,54 @@
+
+:root{
+    /*--background-color: #330051 ; 
+    --header-color: #451082 ;
+    --accent-color: #2d519f ;
+    --font-color: #ff8832 ;
+    --font2-color: #D1F5BE;*/
+
+    --header-color: #1F2F16 ;
+    --font1-color: #F7D6E0 ;
+    --font2-color: #B2ECE1 ;
+    --box-color: #2D728F ; 
+    --background-color: #ECFDFE ;
+}
+
+
+body{
+    background-color: var(--background-color);
+}
+
+#dark-mode::before{
+    content: "🌙";
+}
+
+#dark-mode.dark::before{
+    content: "☀️";
+}
+
+#menu-button{
+    background-color: var(--background-color);
+    border: none;
+    margin: 2px;
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
+#menu-button::before{
+    content: "≡";
+    color: var(--font2-color);
+    background-color: var(--box-color) ;
+    border: 2px solid;
+    border-color: var(--background-color) ;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#menu-button.open::before{
+    content: "X";
+    color: var(--font2-color) ;
+}
