@@ -12,11 +12,76 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
     <title>Family Kitchen</title>
 </head>
 <body>
-    <button id="dark-mode"></button>
-    <button id="menu-button"></button>
-    
+    <header>
+        <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
+        <h1>FAMILY KITCHEN</h1>
+        <button id="dark-mode"></button>
+        <button id="menu-button"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="productlist.html">Product List</a></li>
+
+        </ul>
+
+    </nav>
+    <main>
+        <div id="hero">
+            <picture>                
+                <source media="(min-width: 960px)" srcset="" />
+                <img src="" alt="Picture of a kitchen" />
+            </picture>    
+            <p>Never To Late To Cook</p>
+        </div>
+
+        <div id="cards"> 
+            <section class="card1">
+                <h2>Product 1</h2>
+            </section>
+            <section class="card2">
+                <h2>Product 2</h2>
+            </section>
+            <section class="card3">
+                <h2>Product 3</h2>
+            </section>
+        </div>
+
+        <section id="weather">
+            <h2>Weather Forcast</h2>
+            <div id="currentweather"></div>
+            <section class="forecast1"></section>
+            <section class="forecast2"></section>
+            <section class="forecast3"></section>
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <img src="images/favicon.ico" alt="logo image">
+
+        <p>weather is obtained from </p> <li> <a href="openweathermap.org"></a></li>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="fb icon">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/x.webp" alt="X icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="instagram icon">
+            </a>
+        </div>
+    </footer>    
 </body>
+
 </html>

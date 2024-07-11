@@ -18,6 +18,18 @@ body{
     background-color: var(--background-color);
 }
 
+ul{
+    list-style: none;
+}
+
+#dark-mode{
+    background-color: white;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 #dark-mode::before{
     content: "🌙";
 }
