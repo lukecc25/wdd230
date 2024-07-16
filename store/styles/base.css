@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
+h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 :root{
     /*--background-color: #330051 ; 
     --header-color: #451082 ;
@@ -39,10 +46,11 @@ ul{
 }
 
 #menu-button{
-    background-color: var(--background-color);
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
     border: none;
-    margin: 2px;
-    cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+    align-content: center;
 }
 
 #menu-button::before{
@@ -63,4 +71,94 @@ ul{
 #menu-button.open::before{
     content: "X";
     color: var(--font2-color) ;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--header-color);
+}
+
+header img{
+    height: 150px;
+    margin: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-style: url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap') ;
+}
+
+nav ul{
+    background-color: var(--accent-color);
+    padding-inline-start: 0px;
+    display: none;
+}
+
+nav ul li:hover{
+    background-color: var(--background-color);
+}
+
+nav ul li{
+    text-align: center;
+    margin: 20px;
+    border-radius: 30%;
+    padding: 15px;
+}
+
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--header-color);
+    cursor: help;
+}
+
+#hero{
+    border-top: 2px solid var(--header-color);
+    border-bottom: 2px solid var(--header-color);
+    max-height: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+#hero button{
+    position: absolute;
+    top: 50px;
+	left: 50px;
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.9;
+    background-color: var(--header-color); 
+    color: var(--font2-color);
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: var(--box-color);
+    color: var(--font2-color);
 }

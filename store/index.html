@@ -26,30 +26,29 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="order.html">Order</a></li>
             <li><a href="productlist.html">Product List</a></li>
 
         </ul>
-
     </nav>
     <main>
         <div id="hero">
             <picture>                
-                <source media="(min-width: 960px)" srcset="" />
-                <img src="" alt="Picture of a kitchen" />
-            </picture>    
-            <p>Never To Late To Cook</p>
+                <source media="(max-width: 600px)" srcset="images/kitchen_small.webp" />
+                <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
+                <img src="images/kitchen_large.webp" alt="Kitchen image" />
+            </picture>      
+            <button onclick="window.location.href='productlist.html'">Never To Late To Cook</button>
         </div>
 
         <div id="cards"> 
             <section class="card1">
-                <h2>Product 1</h2>
+                <h2>Kitchenaid</h2>
             </section>
             <section class="card2">
-                <h2>Product 2</h2>
+                <h2>Instapot</h2>
             </section>
             <section class="card3">
-                <h2>Product 3</h2>
+                <h2>Blender</h2>
             </section>
         </div>
 

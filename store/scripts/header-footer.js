@@ -1,8 +1,8 @@
-let datespan = document.querySelector("#currentYear")
-datespan.innerText = new Date().getFullYear()
+//let datespan = document.querySelector("#currentYear")
+// datespan.innerText = new Date().getFullYear()
 
-let lastmodifiedspan = document.querySelector("#lastModified")
-lastmodifiedspan.innerText = document.lastModified
+// let lastmodifiedspan = document.querySelector("#lastModified")
+// lastmodifiedspan.innerText = document.lastModified
 
 // hamburger
 let menu_button = document.getElementById("menu-button")
@@ -13,6 +13,7 @@ menu_button.addEventListener('click', () =>{
 })
 
 
+
 // dark mode stuff
 let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{
@@ -20,15 +21,16 @@ darkbutton.addEventListener("click", () =>{
     if(darkbutton.classList.contains("dark")){
         document.documentElement.style.setProperty('--background-color', '#330051');
         document.documentElement.style.setProperty('--header-color', '#451082');
-        document.documentElement.style.setProperty('--accent-color', '#2d519f');
-        document.documentElement.style.setProperty('--font-color', '#ff8832');
+        document.documentElement.style.setProperty('--box-color', '#2d519f');
+        document.documentElement.style.setProperty('--font1-color', '#ff8832');
         document.documentElement.style.setProperty('--font2-color', '#ff8832');
     }
     else{
-        document.documentElement.style.setProperty('--background-color', '#d0d1ff');
-        document.documentElement.style.setProperty('--header-color', '#231651');
-        document.documentElement.style.setProperty('--accent-color', '#68C5DB');
-        document.documentElement.style.setProperty('--font-color', '#4f2506');
-        document.documentElement.style.setProperty('--font2-color', '#D1F5BE');
+        document.documentElement.style.setProperty('--background-color', '#ECFDFE');
+        document.documentElement.style.setProperty('--header-color', '#1F2F16');
+        document.documentElement.style.setProperty('--box-color', '#2D728F');
+        document.documentElement.style.setProperty('--font1-color', '#F7D6E0');
+        document.documentElement.style.setProperty('--font2-color', '#B2ECE1');
     }
 })
+
