@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development - Luke Campbell - Final Project">
     <meta name="author" content="Luke Campbell">
-    <meta name="og:title" content="Famlily Kitchen Order Confermation Page for Luke Campbell">
+    <meta name="og:title" content="Family Kitchen Order Confirmation Page for Luke Campbell">
     <meta name="og:type" content="website">
     <meta name="og:image" content="https://lukecc25.github.io/wdd230/">
     <meta name="og:url" content="https://lukecc25.github.io/wdd230/store/orderconfermation.html">
@@ -13,26 +13,44 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
-    <title>Family Kitchen</title>
+    <script src="scripts/orderconfirmation.js" defer></script>
+    <title>Order Confirmation</title>
 </head>
 <body>
-    <header>
-        <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
-        <h1>FAMILY KITCHEN</h1>
-        <button id="dark-mode"></button>
-        <button id="menu-button"></button>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="productlist.html">Product List</a></li>
-
-        </ul>
-    </nav>
-    <main>
-        
-    </main>
+    <section id="content">
+        <header>
+            <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
+            <h1>FAMILY KITCHEN</h1>
+            <button id="dark-mode"></button>
+            <button id="menu-button"></button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="productlist.html">Product List</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Order Confirmation</h2>
+            <p><strong>Product Name:</strong> <span id="product-name"></span></p>
+            <p><strong>Product Code:</strong> <span id="product-code"></span></p>
+            <p><strong>Price Before Tax:</strong> $<span id="price"></span></p>
+            <p><strong>Sales Tax (5%):</strong> $<span id="tax"></span></p>
+            <p><strong>Total Price:</strong> $<span id="total"></span></p>
+            
+            <h3>Customer Information</h3>
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+            <p><strong>Street Address:</strong> <span id="street-address"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>State:</strong> <span id="state"></span></p>
+            <p><strong>Zip Code:</strong> <span id="zip-code"></span></p>
+            <p><strong>Gift Message:</strong> <span id="gift-message"></span></p>
+        </main>
+    </section>
     <footer>
         <img src="images/favicon.ico" alt="logo image">
         <p>Weather is obtained from<ul><li><a href="https://openweathermap.org/">openweathermap.org</a></li></ul></p>
@@ -51,5 +69,4 @@
         </div>
     </footer>    
 </body>
-
 </html>

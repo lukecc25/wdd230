@@ -24,13 +24,25 @@ async function fetchProductDetails() {
             if (product) {
                 const productName = document.querySelector('#product-name');
                 const productImage = document.querySelector('#product-image');
-                const productCodeElement = document.querySelector('#product-code');
+                const priceElement = document.querySelector('#price');
+                const taxElement = document.querySelector('#tax');
+                const totalElement = document.querySelector('#total');
 
-                if (productName && productImage && productCodeElement) {
+                if (productName && productImage && priceElement && taxElement && totalElement) {
                     productName.textContent = product.name || 'No name available';
                     productImage.src = product.imageURL || 'default-image.jpg';
                     productImage.alt = product.name || 'Product image';
-                    productCodeElement.textContent = product.code || 'No code available';
+                    
+                    const price = product.price;
+                    const salesTax = (price * 0.05).toFixed(2);
+                    const totalPrice = (price + parseFloat(salesTax)).toFixed(2);
+
+                    priceElement.textContent = price.toFixed(2);
+                    taxElement.textContent = salesTax;
+                    totalElement.textContent = totalPrice;
+
+                    // Set the product code in the hidden input field
+                    document.querySelector('#product-code').value = product.code;
                 } else {
                     console.error('Required elements not found in the document.');
                 }

@@ -1,63 +1,75 @@
 {
-    "Product" : [
+    "Product": [
         {
             "name" : "Kitchen Blender",
             "imageURL": "./images/blender250.webp",
+            "price": 45.34,
             "code":"kb3524"
         },
         {
             "name" : "Ceramic Pot",
             "imageURL": "./images/ceramic_pot.webp",
+            "price": 28.99,
             "code":"cp5524"
         },
         {
             "name" : "Instapot",
             "imageURL": "./images/instapot250.webp",
+            "price": 68.89,
             "code":"ip5901"
         },
         {
             "name" : "Kitchen-aid Mixer",
             "imageURL": "./images/kitchen-aid250.webp",
+            "price": 120.99,
             "code":"km4512"
         },
         {
             "name" : "Knife Block",
             "imageURL": "./images/knife_block.webp",
+            "price": 34.94,
             "code":"kb6345"
         },
         {
             "name" : "Pan",
             "imageURL": "./images/pan.webp",
+            "price": 25.84,
             "code":"pp1534"
         },
         {
             "name" : "Royal Fan Black",
             "imageURL": "./images/royal-fan-black.webp",
+            "price": 48.99,
             "code":"rf3732"
         },
         {
             "name" : "Royal Fan Red",
             "imageURL": "./images/royal-fan-red.webp",
+            "price": 49.99,
             "code":"rf3784"
         },
         {
             "name" : "Kitchen Scale",
             "imageURL": "./images/scale.webp",
+            "price": 25.92,
             "code":"ks7564"
         },
         {
             "name" : "Silver Pot",
             "imageURL": "./images/silver_pot.webp",
+            "price": 39.99,
             "code":"sp8995"
         },
         {
             "name" : "Skillet",
             "imageURL": "./images/skillet.webp",
+            "price": 65.34,
             "code":"ss8124"
         },
         {
             "name" : "Teapot",
             "imageURL": "./images/teapot.webp",
+            "price": 27.95,
             "code":"tp3598"
         }
     ]

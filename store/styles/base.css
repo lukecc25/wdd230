@@ -21,6 +21,10 @@ h1 {
     --background-color: #ECFDFE ;
 }
 
+body{
+    background-color: var(--background-color);
+}
+
 #content{
     background-color: var(--background-color);
     text-align: center;
@@ -234,3 +238,21 @@ margin: 1rem;
     border: 1px var(--header-color) solid;
     width: 90%;
 }
+
+/* Order Page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+}
+
+form label {
+    padding: .25em;
+    width: 100%; 
+    max-width: 400px; 
+}
+ form button{
+    margin-bottom: 1em;
+ }
