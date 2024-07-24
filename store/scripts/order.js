@@ -30,7 +30,7 @@ async function fetchProductDetails() {
 
                 if (productName && productImage && priceElement && taxElement && totalElement) {
                     productName.textContent = product.name || 'No name available';
-                    productImage.src = product.imageURL || 'default-image.jpg';
+                    productImage.src = product.imageURL || 'images/question-mark.webp'; // Fallback to placeholder
                     productImage.alt = product.name || 'Product image';
                     
                     const price = product.price;
