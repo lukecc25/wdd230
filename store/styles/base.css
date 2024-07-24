@@ -203,6 +203,10 @@ nav ul.open{
     padding: 0.5em;
 }
 
+#weather h3{
+    color: var(--box-color);
+}
+
 footer{
     padding: 1em;
     background-color: var(--header-color);
@@ -235,7 +239,7 @@ margin: 2em;
 /*About Us*/
 
 .aboutcompany h2{
-    color: var(--header-color);
+    color: var(--box-color);
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -246,7 +250,7 @@ margin: 2em;
     width: 90%;
 }
 .aboutcompany p{
-    color: var(--header-color);
+    color: var(--box-color);
     font-size: x-large;
 }
 
@@ -262,7 +266,7 @@ margin: 1rem;
 }
 
 .map h2{
-    color: var(--header-color);
+    color: var(--box-color);
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -273,7 +277,7 @@ margin: 1rem;
 }
 
 .map p{
-    color: var(--header-color);
+    color: var(--box-color);
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -287,10 +291,15 @@ iframe{
 /* Order Page */
 
 form {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-align: left; 
+    background-color: var(--box-color);
+    color: var(--font2-color);
+    box-sizing: border-box;
+    padding: .5em;
+    margin: 1em;
 }
 
 form label {
@@ -313,7 +322,20 @@ form label {
  }
 
 .back{
-    background-color: #2D728F;
-    color: var(--font2-color);
+    background-color: var(--header-color);
+    color: var(--font1-color);
     border-radius: 50px 50px;
+}
+
+/* Order Confirmation Page */
+
+#confirmation{
+    display: inline-block;
+    color: var(--font2-color);
+    background-color: var(--box-color);
+    border-radius: 60px 20px;
+    border: 2px var(--header-color) solid;
+    margin: 1em;
+    box-sizing: border-box;
+    padding: 1em;
 }
