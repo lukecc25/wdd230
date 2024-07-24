@@ -286,6 +286,7 @@ margin: 1rem;
 iframe{
     max-width: 300px;
     max-height: 300px;
+    margin-bottom: 1em;
 }
 
 /* Order Page */
