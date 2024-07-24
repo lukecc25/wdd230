@@ -1,0 +1,64 @@
+{
+    "Product" : [
+        {
+            "name" : "Kitchen Blender",
+            "imageURL": "./images/blender250.webp",
+            "code":"kb3524"
+        },
+        {
+            "name" : "Ceramic Pot",
+            "imageURL": "./images/ceramic_pot.webp",
+            "code":"cp5524"
+        },
+        {
+            "name" : "Instapot",
+            "imageURL": "./images/instapot250.webp",
+            "code":"ip5901"
+        },
+        {
+            "name" : "Kitchen-aid Mixer",
+            "imageURL": "./images/kitchen-aid250.webp",
+            "code":"km4512"
+        },
+        {
+            "name" : "Knife Block",
+            "imageURL": "./images/knife_block.webp",
+            "code":"kb6345"
+        },
+        {
+            "name" : "Pan",
+            "imageURL": "./images/pan.webp",
+            "code":"pp1534"
+        },
+        {
+            "name" : "Royal Fan Black",
+            "imageURL": "./images/royal-fan-black.webp",
+            "code":"rf3732"
+        },
+        {
+            "name" : "Royal Fan Red",
+            "imageURL": "./images/royal-fan-red.webp",
+            "code":"rf3784"
+        },
+        {
+            "name" : "Kitchen Scale",
+            "imageURL": "./images/scale.webp",
+            "code":"ks7564"
+        },
+        {
+            "name" : "Silver Pot",
+            "imageURL": "./images/silver_pot.webp",
+            "code":"sp8995"
+        },
+        {
+            "name" : "Skillet",
+            "imageURL": "./images/skillet.webp",
+            "code":"ss8124"
+        },
+        {
+            "name" : "Teapot",
+            "imageURL": "./images/teapot.webp",
+            "code":"tp3598"
+        }
+    ]
+}

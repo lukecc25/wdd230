@@ -13,62 +13,62 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/forecasts.js" defer></script>
     <title>Family Kitchen</title>
 </head>
 <body>
-    <header>
-        <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
-        <h1>FAMILY KITCHEN</h1>
-        <button id="dark-mode"></button>
-        <button id="menu-button"></button>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="productlist.html">Product List</a></li>
+    <section id="content">
+        <header>
+            <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
+            <h1>FAMILY KITCHEN</h1>
+            <button id="dark-mode"></button>
+            <button id="menu-button"></button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="productlist.html">Product List</a></li>
 
-        </ul>
-    </nav>
-    <main>
-        <div id="hero">
-            <picture>                
-                <source media="(max-width: 600px)" srcset="images/kitchen_small.webp" />
-                <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
-                <img src="images/kitchen_large.webp" alt="Kitchen image" />
-            </picture>      
-            <button onclick="window.location.href='productlist.html'">Never To Late To Cook</button>
-        </div>
+            </ul>
+        </nav>
+        <main>
+            <div id="hero">
+                <picture>                
+                    <source media="(max-width: 600px)" srcset="images/kitchen_small.webp" />
+                    <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
+                    <img src="images/kitchen_large.webp" alt="Kitchen image" />
+                </picture>      
+                <button onclick="window.location.href='productlist.html'">Never To Late To Cook</button>
+            </div>
 
-        <div id="cards"> 
-            <section class="card1">
-                <h2>Kitchenaid</h2>
+            <div id="cards"> 
+                <section class="card1">
+                    <h2>Kitchenaid</h2>
+                </section>
+                <section class="card2">
+                    <h2>Instapot</h2>
+                </section>
+                <section class="card3">
+                    <h2>Blender</h2>
+                </section>
+            </div>
+
+            <section id="weather">
+                <h3>Current Weather</h3>
+                <section id="current-weather"></section>
+
+                <h3>Three Day Forecast</h3>
+                <section id="forecast"></section>
             </section>
-            <section class="card2">
-                <h2>Instapot</h2>
-            </section>
-            <section class="card3">
-                <h2>Blender</h2>
-            </section>
-        </div>
 
-        <section id="weather">
-            <h2>Weather Forcast</h2>
-            <div id="currentweather"></div>
-            <section class="forecast1"></section>
-            <section class="forecast2"></section>
-            <section class="forecast3"></section>
-        </section>
-
-    </main>
-
-
-
-
+        </main>
+</section>
     <footer>
         <img src="images/favicon.ico" alt="logo image">
-
-        <p>weather is obtained from </p> <li> <a href="openweathermap.org"></a></li>
+        <p>Weather is obtained from<ul><li><a href="https://openweathermap.org/">openweathermap.org</a></li></ul></p>
+        <p>Located at 1234 S Main Street, Salt Lake City, UT 84101</p>
+        <p>Phone#: (801) 555-1234</p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.webp" alt="fb icon">
@@ -80,7 +80,7 @@
                 <img src="images/instagram.webp" alt="instagram icon">
             </a>
         </div>
-    </footer>    
+    </footer>
 </body>
 
 </html>

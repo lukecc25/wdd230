@@ -4,6 +4,7 @@ h1 {
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
+    font-size: 2.5em;
   }
   
 :root{
@@ -20,9 +21,9 @@ h1 {
     --background-color: #ECFDFE ;
 }
 
-
-body{
+#content{
     background-color: var(--background-color);
+    text-align: center;
 }
 
 ul{
@@ -161,4 +162,75 @@ nav ul li a:hover{
     margin-top: 10px;
     background-color: var(--box-color);
     color: var(--font2-color);
+}
+
+#current-weather {
+    color: var(--font2-color);
+    background-color: var(--box-color);
+    border: 2px var(--header-color) solid;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+#forecast{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 2em;
+    color: var(--font2-color);
+    background-color: var(--box-color);
+    border: 2px var(--header-color) solid;
+    padding: 0.5em;
+}
+
+footer{
+    padding: 1em;
+    background-color: var(--header-color);
+    color: var(--font1-color);
+    text-align: center;
+}
+footer ul li a{
+    color: var(--font1-color);
+}
+footer ul li a:hover{
+    color: var(--font2-color);
+}
+
+/* productlist.html */
+#productcards section{
+background-color: var(--box-color);
+color: var(--font2-color);
+border: 2px var(--header-color) solid;
+border-radius: 50px 100px;
+text-align: center;
+padding: 0.5em;
+flex-direction: row;
+margin: 2em;
+}
+
+/*About Us*/
+
+.aboutcompany h2{
+    color: var(--header-color);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+}
+.aboutcompany hr{
+    border: 1px var(--header-color) solid;
+    width: 90%;
+}
+.aboutcompany p{
+    color: var(--header-color);
+}
+
+.reasons div{
+color: var(--font2-color);
+background-color: var(--box-color);
+border: 2px var(--header-color) solid;
+margin: 1rem;
+}
+.reasons hr{
+    border: 1px var(--header-color) solid;
+    width: 90%;
 }
