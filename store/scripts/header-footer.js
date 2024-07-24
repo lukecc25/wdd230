@@ -22,8 +22,8 @@ darkbutton.addEventListener("click", () =>{
         document.documentElement.style.setProperty('--background-color', '#0b3344');
         document.documentElement.style.setProperty('--header-color', '#141414');
         document.documentElement.style.setProperty('--box-color', '#2d519f');
-        document.documentElement.style.setProperty('--font1-color', '#ff8832');
-        document.documentElement.style.setProperty('--font2-color', '#ff8832');
+        document.documentElement.style.setProperty('--font1-color', '#F7D6E0');
+        document.documentElement.style.setProperty('--font2-color', '#F7D6E0');
     }
     else{
         document.documentElement.style.setProperty('--background-color', '#ECFDFE');
