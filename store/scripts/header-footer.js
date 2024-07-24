@@ -19,8 +19,8 @@ let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{
     darkbutton.classList.toggle("dark")
     if(darkbutton.classList.contains("dark")){
-        document.documentElement.style.setProperty('--background-color', '#330051');
-        document.documentElement.style.setProperty('--header-color', '#451082');
+        document.documentElement.style.setProperty('--background-color', '#0b3344');
+        document.documentElement.style.setProperty('--header-color', '#141414');
         document.documentElement.style.setProperty('--box-color', '#2d519f');
         document.documentElement.style.setProperty('--font1-color', '#ff8832');
         document.documentElement.style.setProperty('--font2-color', '#ff8832');
