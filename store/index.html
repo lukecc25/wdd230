@@ -18,37 +18,36 @@
     <title>Family Kitchen</title>
 </head>
 <body>
-    <section id="content">
-        <header>
-            <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
-            <h1>FAMILY KITCHEN</h1>
-            <button id="dark-mode"></button>
-            <button id="menu-button"></button>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="productlist.html">Product List</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div id="hero">
-                <picture>                
-                    <source media="(max-width: 600px)" srcset="images/kitchen_small.webp" />
-                    <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
-                    <img src="images/kitchen_large.webp" alt="Kitchen image" />
-                </picture>      
-                <button onclick="window.location.href='productlist.html'">Never Too Late To Cook</button>
-            </div>
-            <div id="cards"></div>
-            <section id="weather">
-                <h3>Current Weather</h3>
-                <section id="current-weather"></section>
-                <h3>Three Day Forecast</h3>
-                <section id="forecast"></section>
-            </section>
-        </main>
+    <header>
+        <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
+        <h1>FAMILY KITCHEN</h1>
+        <button id="dark-mode"></button>
+        <button id="menu-button"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="productlist.html">Product List</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <div id="hero">
+            <picture>                
+                <source media="(max-width: 600px)" srcset="images/kitchen_small.webp" />
+                <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
+                <img src="images/kitchen_large.webp" alt="Kitchen image" />
+            </picture>      
+            <button onclick="window.location.href='productlist.html'">Never Too Late To Cook</button>
+        </div>
+        <div id="cards"></div>
+        <section id="weather">
+            <h3>Current Weather</h3>
+            <section id="current-weather"></section>
+            <h3>Three Day Forecast</h3>
+            <section id="forecast"></section>
+        </section>
+    </main>
     </section>
     <footer>
         <img src="images/favicon.ico" alt="logo image">
