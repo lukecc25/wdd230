@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development - Luke Campbell - Final Project">
     <meta name="author" content="Luke Campbell">
-    <meta name="og:title" content="Famlily Kitchen Home Page for Luke Campbell">
+    <meta name="og:title" content="Family Kitchen Home Page for Luke Campbell">
     <meta name="og:type" content="website">
     <meta name="og:image" content="https://lukecc25.github.io/wdd230/">
     <meta name="og:url" content="https://lukecc25.github.io/wdd230/store/index.html">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/forecasts.js" defer></script>
+    <script src="scripts/threeproducts.js" defer></script>
     <title>Family Kitchen</title>
 </head>
 <body>
@@ -29,7 +30,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="productlist.html">Product List</a></li>
-
             </ul>
         </nav>
         <main>
@@ -39,31 +39,17 @@
                     <source media="(max-width: 900px)" srcset="images/kitchen_medium.webp" />
                     <img src="images/kitchen_large.webp" alt="Kitchen image" />
                 </picture>      
-                <button onclick="window.location.href='productlist.html'">Never To Late To Cook</button>
+                <button onclick="window.location.href='productlist.html'">Never Too Late To Cook</button>
             </div>
-
-            <div id="cards"> 
-                <section class="card1">
-                    <h2>Kitchenaid</h2>
-                </section>
-                <section class="card2">
-                    <h2>Instapot</h2>
-                </section>
-                <section class="card3">
-                    <h2>Blender</h2>
-                </section>
-            </div>
-
+            <div id="cards"></div>
             <section id="weather">
                 <h3>Current Weather</h3>
                 <section id="current-weather"></section>
-
                 <h3>Three Day Forecast</h3>
                 <section id="forecast"></section>
             </section>
-
         </main>
-</section>
+    </section>
     <footer>
         <img src="images/favicon.ico" alt="logo image">
         <p>Weather is obtained from<ul><li><a href="https://openweathermap.org/">openweathermap.org</a></li></ul></p>
@@ -82,5 +68,4 @@
         </div>
     </footer>
 </body>
-
 </html>

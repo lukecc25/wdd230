@@ -98,7 +98,7 @@ header h1{
 }
 
 nav ul{
-    background-color: var(--accent-color);
+    background-color: var(--header-color);
     padding-inline-start: 0px;
     display: none;
 }
@@ -114,14 +114,8 @@ nav ul li{
     padding: 15px;
 }
 
-nav ul.open{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 nav ul li a{
-    color: rgb(0, 0, 0);
+    color: var(--font1-color);
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
@@ -130,6 +124,11 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--header-color);
     cursor: help;
+}
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #hero{
@@ -140,6 +139,7 @@ nav ul li a:hover{
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin-top: 1em;
 }
 
 
@@ -160,12 +160,30 @@ nav ul li a:hover{
     font-size: large;
 }
 
-.cards{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+#cards {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
     background-color: var(--box-color);
     color: var(--font2-color);
+}
+
+.card a{
+    color: var(--font1-color);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
 }
 
 #current-weather {
@@ -211,6 +229,10 @@ flex-direction: row;
 margin: 2em;
 }
 
+#productcards a{
+    color: var(--font1-color);
+}
+
 /*About Us*/
 
 .aboutcompany h2{
@@ -226,6 +248,7 @@ margin: 2em;
 }
 .aboutcompany p{
     color: var(--header-color);
+    font-size: x-large;
 }
 
 .reasons div{
@@ -237,6 +260,29 @@ margin: 1rem;
 .reasons hr{
     border: 1px var(--header-color) solid;
     width: 90%;
+}
+
+.map h2{
+    color: var(--header-color);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.map hr{
+    border: 1px var(--box-color) solid;
+}
+
+.map p{
+    color: var(--header-color);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+iframe{
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* Order Page */
@@ -256,3 +302,19 @@ form label {
  form button{
     margin-bottom: 1em;
  }
+
+ .productinfo{
+    display: inline-block;
+    background-color: var(--box-color);
+    color: var(--font2-color);
+    border: 2px var(--header-color) solid;
+    padding: .5em;
+    margin: 1em;
+    box-sizing: border-box;
+ }
+
+.back{
+    background-color: #2D728F;
+    color: var(--font2-color);
+    border-radius: 50px 50px;
+}

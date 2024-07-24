@@ -18,29 +18,28 @@
     <title>Family Kitchen</title>
 </head>
 <body>
+    <header>
+        <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
+        <h1>Order Page</h1>
+        <button id="dark-mode"></button>
+        <button id="menu-button"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="productlist.html">Product List</a></li>
+        </ul>
+    </nav>
     <section id="content">
-        <header>
-            <img src="images/kitchen_logo.webp" alt="Family Kitchen Logo">
-            <h1>Order Page</h1>
-            <button id="dark-mode"></button>
-            <button id="menu-button"></button>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="productlist.html">Product List</a></li>
-            </ul>
-        </nav>
         <main id="orderitem">
-            <h1 id="product-name">Product Name</h1>
-            <img id="product-image" src="" alt="Product Image">
-            
-            <!-- Display Price Information -->
-            <p>Price Before Tax: $<span id="price"></span></p>
-            <p>Sales Tax (5%): $<span id="tax"></span></p>
-            <p>Total Price: $<span id="total"></span></p>
-            
+            <div class="productinfo">
+                <h1 id="product-name">Product Name</h1>
+                <img id="product-image" src="" alt="Product Image">
+                <p>Price Before Tax: $<span id="price"></span></p>
+                <p>Sales Tax (5%): $<span id="tax"></span></p>
+                <p>Total Price: $<span id="total"></span></p>
+            </div>
             <form action="orderconfermation.html" method="get">
                 <label>First Name: <sup class="red">*</sup>
                     <input type="text" name="firstname" id="firstname" required>
@@ -72,8 +71,8 @@
                 <input id="join-time" type="hidden" name="join-time" value="">
                 <input id="product-code" type="hidden" name="product-code" value="">
                 <button type="submit">Buy Item Now!</button>
+                <button class="back" onclick="window.location.href='productlist.html'">Back to Product List</button>
             </form>
-            <a href="productlist.html">Back to Product List</a>
         </main>
     </section>
     <footer>

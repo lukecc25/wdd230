@@ -9,7 +9,7 @@ const displayProductList = (products) => {
             const newSection = document.createElement('section');
             newSection.innerHTML = `
                 <h2>${product.name}</h2>
-                <img src="${product.imageURL}" alt="${product.name}" loading="lazy" height="250" onerror="this.onerror=null; this.src='default-image.jpg';">
+                <img src="${product.imageURL}" alt="${product.name}" loading="lazy" height="250"  onerror="this.onerror=null; this.src='default-image.jpg';">
                 <h2>$${product.price}</h2>
                 <a href="order.html?code=${product.code}">Order Now</a>
             `;

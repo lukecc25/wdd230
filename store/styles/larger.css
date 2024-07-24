@@ -1,3 +1,20 @@
 @media screen and (min-width:900px){
+    /* Order Page */
     
+    #orderitem {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 10%;
+
+    }
+    
+    form {
+        flex: 2;
+    }
+
+    #content a{
+        margin-right: 10%;
+    }
+
 }
